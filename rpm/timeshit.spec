@@ -6,18 +6,14 @@ Summary:	timeshitf
 
 License:	GPLv2+
 Source0:	%{name}-%{version}.tar.gz
-#Source1:  name.source.1
-
 #Patch101:     mytest.patch
 
 BuildArch:	x86_64
 
-Requires:	glib2
-Requires:	dconf
-Requires:   systemd
+BuildRequires:	libgee
 
 %description
-timeshift backup and restore
+System restore tool for Linux. Creates filesystem snapshots using rsync+hardlinks, or BTRFS snapshots. Supports scheduled snapshots, multiple backup levels, and exclude filters. Snapshots can be restored while system is running or from Live CD/USB.
 
 %prep
 %setup -q
@@ -43,4 +39,4 @@ timeshift backup and restore
 
 %changelog
 * Wed Mar 24 2021 Han Jinpeng <hanjp@superred.com.cn> 20.11
-- init timeshift
+- Initial packaging
