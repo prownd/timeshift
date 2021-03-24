@@ -13,7 +13,9 @@ BuildArch:	x86_64
 BuildRequires:	libgee
 
 %description
-System restore tool for Linux. Creates filesystem snapshots using rsync+hardlinks, or BTRFS snapshots. Supports scheduled snapshots, multiple backup levels, and exclude filters. Snapshots can be restored while system is running or from Live CD/USB.
+System restore tool for Linux. Creates filesystem snapshots using rsync+hardlinks, or BTRFS snapshots.
+Supports scheduled snapshots, multiple backup levels, and exclude filters. 
+Snapshots can be restored while system is running or from Live CD/USB.
 
 %prep
 %setup -q
